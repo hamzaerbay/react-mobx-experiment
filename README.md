@@ -1,11 +1,11 @@
-# react-starter-kit
+# react-mobx-experiment
 ReactJS exercises
 
 ## Getting started
 
 This project is using webpack and sass css pre-processor.
 
-Before started 
+Before started
 
 Run `npm install` for getting dependencies and run
 
