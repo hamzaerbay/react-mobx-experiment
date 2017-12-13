@@ -11,9 +11,6 @@ body {
 .container {
 	width: 300px;
 }
-.mr0{
-	margin-right: 0 !important;
-}
 h1 {
 	color: $color-rain-darker;
 	text-align: center;
@@ -63,12 +60,11 @@ h1 {
 		cursor: pointer;
 	}
 }
-.form {
+.add-item__form {
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
 }
-.input-box {
+.add-item__input {
 	padding: 10px;
 	border-radius: 4px;
 	border: 1px solid $color-rain;

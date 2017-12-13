@@ -45,25 +45,23 @@ export default class TodoList extends Component {
 				</h1>
 				<div>{filter}</div>
 				<form
-					className="form"
+					className="add-item__form"
 					ref={input => {
 						this.addForm = input;
 					}}
 					onSubmit={e => {
-						this.createNew(e);
+						this.createNew(e); 
 					}}
 				>
-					<input className="input-box" ref={input => (this.newItem = input)} placeholder="add item"/>
+					<input className="add-item__input" ref={input => (this.newItem = input)} />
 					<button type="submit" className="btn btn--primary">
 						Add
 					</button>
 				</form>
-				<div className="form">
-					<input className="input-box mr0" value={filter} onChange={this.filter} placeholder="search" />
-				</div>
+				<input className="filter" value={filter} onChange={this.filter} />
 				<ul className="todo-list">{todoItems}</ul>
 				<a href="#" onClick={clearComplete}>
-					Remove Completed
+					Clear
 				</a>
 			</div>
 		);
